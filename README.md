@@ -8,13 +8,20 @@ See also the original documentation in SelfDrive.docx
 Currently no code runs on startup.
 
 This lists which python scripts do what:
+
 comTest.py sends some simple steering and driving commands to the arduino through the serial connection.
+
 controller.py is the main controller script for the project. It uses pre programmed computer vision 
 	settings to track an object and drive towards it. Tracking appears to be working but the driving is not 100%.
+	
 controller2.py appears to be a rewrite of controller.py made by the origional project creators, Im not sure of the 
 	motivation behind it
+	
 newController.py looks the same as above
+
 opencv_practice.py was probably a learning script made by the origional project creator
+
 range_detector.py is a tool to calibrate the computer vision settings. It uses the same vision pipeline as 
 	controller.py. use this to find the settings for your object and then put those settings into controller.py
+	
 test.py looks like it was used to test camera functions by the origional project creator
