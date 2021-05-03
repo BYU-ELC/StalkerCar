@@ -5,7 +5,7 @@ Implementing an RC circuit design, this self-driving car is set to follow (i.e. 
 
 See also the original documentation in SelfDrive.docx
 
-Currently no code runs on startup.
+Currently no code runs on startup. The Pi autoconnects to eduroam and you can ssh into the pi at pi@stalkercar.app.byu.edu , X forwarding is enabled and useful when testing the vision pipeline.
 
 **This lists which python scripts do what:**
 * comTest.py sends some simple steering and driving commands to the arduino through the serial connection.
