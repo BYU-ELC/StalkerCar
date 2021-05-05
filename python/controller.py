@@ -205,6 +205,8 @@ def control_loop(arduino, r_px, x_px, y_px):
             arduino.write(pack(int(steer_out) + 100))
             #if the object is more than two feet away, write 12% to the throttle.
             #otherwise, write 0%. 100 corresponds to 0% and 200 corresponds to 100%.
+            #  edit: from my tests it looks like this motor controller only allows for full forward/off/full
+            #  reverse with no graduation in between. I might have done something wrong though
             if object_distance > 24:
                 arduino.write(pack(1))
                 # arduino.write(pack(112))
