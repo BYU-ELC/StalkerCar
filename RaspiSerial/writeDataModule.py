@@ -4,9 +4,9 @@ import time
 def openSerialConnection():
     ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
     ser.reset_input_buffer()
+    return ser
 
-def writeData(data, serialPort):
-    speed, direction = data
+def writeData(speed, direction, serialPort):
     serialPort.write(b"300100\n")
         
 
@@ -18,5 +18,5 @@ def readData(serialPort):
 if __name__ == '__main__':
     ser = openSerialConnection()
     while True:
-        writeData((100,300), ser)
+        writeData(100, 300, ser)
         print(readData(ser))
