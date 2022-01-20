@@ -1,9 +1,24 @@
 void setup() {
-  // put your setup code here, to run once:
+  //set up steering servo pin
+  //set up motor esc control
+  
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+
+
+  //assume 3 digit for direction
+  //assum 3 digit for speed
+
+
+
+  
 
 }
+
+//Function to turn right
+//Function to turn left
+//function to go forward
+//function to move backwards
